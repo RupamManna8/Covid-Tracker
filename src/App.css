@@ -1,0 +1,72 @@
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1{
+  color:rgb(16, 107, 128);
+  text-decoration: underline;
+}
+
+.danger{
+  color:red;
+}
+
+.recovered{
+  color:green;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;}
+
+
+  .country-form {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .country-input {
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: 2px solid rgb(16, 107, 128);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .country-input:focus {
+    border-color: #0056b3;
+    animation: pulse 1s infinite;
+  }
+  
+  .submit-btn {
+    padding: 8px 20px;
+    background-color: rgb(16, 107, 128);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+  }
